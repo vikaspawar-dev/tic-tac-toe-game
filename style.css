@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  text-align: center;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Game Container */
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vmin;
+}
+
+/* Boxes */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 15px;
+  border: none;
+  font-size: 8vmin;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: #1e293b;
+  color: #38bdf8;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background: #334155;
+}
+
+/* Buttons */
+#reset-btn,
+#new-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  transition: 0.3s;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+/* Winner Message */
+.msg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#msg {
+  font-size: 2rem;
+  color: #facc15;
+}
+
+.hide {
+  display: none;
+}
